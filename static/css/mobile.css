@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:visited {
+    display: block;
+    text-decoration: none;
+    color: #666;
+}
+
+ul li {
+    list-style: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/*
+像素小于768时,pc隐藏
+*/
+
+.pc {
+    display: none;
+}
+
+
+/*
+像素小于768时,.mobile显示
+*/
+
+.mobile {
+    display: block;
+    background: #eeeff0;
+    padding: 10px;
+    width: 100%;
+}
+
+.mobile .header {
+    width: 100%;
+    position: relative;
+    height: 54px;
+}
+
+.mobile .header .weather {
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile .header .user-info {
+    float: right;
+    padding-right: 20px;
+}
+
+.mobile .header .weather .weather-num {
+    font-size: 25px;
+    color: #8c8c8c;
+    padding-left: 2px;
+}
+
+.mobile .header .weather .weather-status p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999;
+}
+
+.mobile .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile .main .logo img {
+    width: 175px;
+    height: 55px;
+}
+
+.mobile .main form {
+    width: 100%;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mobile .main form .text_span {
+    height: 42px;
+    width: 75%;
+    border: 1px solid #b6b6b6;
+    background: #fff;
+}
+
+.mobile .main form .text_span #baidu_text {
+    width: 90%;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    height: 28px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 42px 7px 6px;
+}
+
+.mobile .main form .button_span {
+    width: 20%;
+}
+
+.mobile .main form .button_span .baidu_bnt {
+    width: 100%;
+    border-bottom: 1px solid #2868c8;
+    -moz-box-shadow: 1px 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+    background-color: #317ef3;
+    cursor: pointer;
+    color: #fff;
+    height: 44px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 0;
+}
+
+.mobile .navs {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.mobile .navs .primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile .navs .secondary-shell {
+    display: none;
+}
+
+.mobile .navs .secondary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile .navs a {
+    margin-top: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+.mobile .navs a p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mobile .my-navs {
+    margin-top:20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+}
+
+.mobile .my-navs .title {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    margin-bottom:15px;
+}
+
+.mobile .my-navs .title .title-text {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    float: left;
+}
+
+.mobile .my-navs .title i {
+    display: block;
+    float: right;
+}
+
+.mobile .my-navs .title .edite {
+    display: none;
+    position: absolute;
+    border: 1px solid #d9dde2;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 91px;
+    right: 0px;
+    top: 40px;
+}
+
+.mobile .my-navs .title .edite li {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 45px;
+    color: #262626;
+}
+
+.mobile .my-navs .my-navs-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:30px;
+}
+
+.mobile .my-navs .my-navs-content a {
+    width: 20%;
+    margin-bottom:20px;
+    line-height:27px;
+}
+
+.mobile .my-navs .my-navs-content a span{
+    color:black
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    color: #a9b7b7;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont2 {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
